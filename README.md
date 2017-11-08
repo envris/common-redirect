@@ -15,6 +15,8 @@ Make sure to specify the `TARGET_PATH` environment variable to where you want to
 
     docker run --env TARGET_PATH=something/or/other httpd-redirect:1.0.0
 
+Make sure that the `TARGET_PATH` environment variable does not start with a leading slash.
+
 Building
 -------------
 
@@ -23,3 +25,8 @@ Simply run the following from the root of the repo:
     docker build -t httpd-redirect:$VERSION .
 
 Where `$VERSION` is the version you want to give it.
+
+Configuration
+-------------
+
+There are two config files. One is `my-httpd.conf`, this one is added to the docker image. The config files under `httpd-cfg` get pulled in for [httpd s2i](https://github.com/openshift/source-to-image) builds in Openshift. If you are just building the Docker image you can ignore that folder.
