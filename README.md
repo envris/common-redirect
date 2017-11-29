@@ -27,8 +27,11 @@ The REDIRECT_DEFS environment variable should conform to the following syntax
    - WHERE a redirect definition is a colon separated pair
       - WHERE the left side is a regex to match for the definition (.* will match all paths)
       - WHERE the right side is a path to redirect the requestor to
- For example, if REDIRECT_DEFS was set to
-   "/apps/.*:apps/login,/admin/.*:admin/login"
+
+For example, if REDIRECT_DEFS was set to
+
+    "/apps/.*:apps/login,/admin/.*:admin/login"
+
  the following config would be generated
 
 ```
