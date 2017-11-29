@@ -10,6 +10,10 @@ RUN chown 1001:0 /tmp/httpd.conf
 RUN chown 1001:0 /tmp/template-config.sh
 RUN chown 1001:0 /tmp/start.sh
 
+RUN chmod 777 /tmp/httpd.conf
+RUN chown 777 /tmp/template-config.sh
+RUN chown 777 /tmp/start.sh
+
 USER 1001
 
 CMD ["/tmp/start.sh"]
