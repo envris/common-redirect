@@ -15,7 +15,7 @@ You can run the server with the following command:
 
     docker run --env REDIRECT_DEFS=.*:something/or/other httpd-redirect:$VERSION
 
-Where `$VERSION` is the version the image was tagged with and `$REDIRECT_DEFS` is a comma separated list of redirect definitions. See the [#Config_Generation](Config Generation) section for more detailed information.
+Where `$VERSION` is the version the image was tagged with and `$REDIRECT_DEFS` is a comma separated list of redirect definitions. See the [Config Generation](#config-generation) section for more detailed information.
 
 The host is automatically picked up from the URL and is not configurable.
 
