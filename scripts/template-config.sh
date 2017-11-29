@@ -70,7 +70,7 @@ for def in "${defs[@]}"; do
     # Split colon separated pair into two variables
     IFS=':' read match_regex target_path <<< "$def"
     # Write entry
-    echo "    RewriteRule \"(${match_regex})\" \"https://%{HTTP_HOST}/${target_path}\" [R]" >> "${output_file}"
+    echo "    RewriteRule ${match_regex} https://%{HTTP_HOST}/${target_path} [R]" >> "${output_file}"
 done
 
 echo "Writing footer..."

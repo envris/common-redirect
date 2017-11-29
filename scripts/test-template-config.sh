@@ -13,7 +13,7 @@ rm -f "${HTTPD_CONFIG_FILE}"
 
 echo "TEST: Running test target..."
 # Run script
-../httpd-pre-init/template-config.sh
+./template-config.sh
 echo "TEST: Test target terminated..."
 
 
@@ -30,7 +30,7 @@ fi
 
 echo "TEST: Checking for fail if run twice..."
 
-if ../httpd-pre-init/template-config.sh; then
+if ./template-config.sh; then
     echo "TEST: Test target ran successfully. Test failed"
     exit 1
 else
