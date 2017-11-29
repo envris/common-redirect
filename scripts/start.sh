@@ -4,4 +4,4 @@
 set -e
 
 /tmp/template-config.sh
-httpd-foreground
+/usr/bin/run-httpd -f /tmp/httpd.conf
