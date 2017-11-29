@@ -16,3 +16,7 @@
 1.1.2
 
 - Acutally fix the code so that the image works on OpenShift
+
+1.1.3
+
+- Remove brackets and quotes that were placed around the rewrite rules to allow for more flexibility in the redirect definitions
