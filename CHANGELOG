@@ -8,3 +8,11 @@
 -----
 
 - Enable multiple redirect rules for a single container
+
+1.1.1
+
+- Attempt to fix the code so that the image works on OpenShift
+
+1.1.2
+
+- Acutally fix the code so that the image works on OpenShift
