@@ -1,0 +1,10 @@
+1.0.0
+-----
+
+- Initial commit
+- Redirects all URLs to a single target
+
+1.1.0
+-----
+
+- Enable multiple redirect rules for a single container
