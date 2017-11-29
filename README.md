@@ -44,6 +44,16 @@ For example, if REDIRECT_DEFS was set to
 
 Make sure that the right side of the pair (target path) does not start with a leading slash.
 
+Migration
+---------
+
+If you are upgrading from version 1.0.0 to 1.1.0 perform the following steps:
+
+1. Rename the TARGET_PATH environment variable to REDIRECT_DEFS.
+2. Change the value of the REDIRECT_DEFS environment variable to `.*:<TARGET_PATH>"` where `<TARGET_PATH>` was the previous value of the TARGET_PATH environment variable.
+
+For example if the TARGET_PATH on version 1.0.0 was `apps/login`, the REDIRECT_DEFS environment variable should be `.*:apps/login`.
+
 Building
 -------------
 
